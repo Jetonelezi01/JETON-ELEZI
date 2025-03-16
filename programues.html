@@ -363,35 +363,11 @@ margin-top: 200px;
 
 
 
-.vids{
-    width: 280px; 
-    height: 320px;
-     margin-top: 30px;
-     border: solid black 2px; box-shadow: 6px 4px 8px;  
-      display: block;
-      margin-left:auto;
-      margin-right: auto;
-      margin-top: 80px;
-}
 
 
-.hero{
-    margin-top: -1000px;
-}
 
-@media (max-width: 500px) {
-    .hero{
-        margin-top: -700px;
-    }
-    }
 
-    @media (max-width: 1300px) {
-    .hero{
-        margin-top: -700px;
-    }
-    }
-
-    .footer {
+.footer {
     padding: 90px 0 80px !important;
     color: #999;
     background-color: #1f1f1f;
@@ -586,60 +562,212 @@ margin-top: 200px;
                         <span class="icon-bar"></span>
                     </button>
                     
-                    <a href="index.html" class="site-logo"><img  style="width: 70px; height: 65px; margin-top: -15px;" src="jeton_logo.png" alt="logo"></a>
+                    <a href="#hero" class="site-logo"><img  style="width: 70px; height: 65px; margin-top: -15px;" src="jeton_logo.png" alt="logo"></a>
 
-                </div>
+                </div><!-- /.navbar-header -->
 
                 <div class="main-menu" id="portfolio-perfect-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="page-scroll"><a href="index.html"data-translate-key="ballina">Ballina</a></li>
-			<li class="page-scroll"><a href="Video-editor.html"data-translate-key="krev">Video Kreative</a></li>
-                        <li class="page-scroll"><a href="#contact"data-translate-key="magic">Kontakti</a></li>
-
-                    
-                      
+                        <li class="page-scroll"><a href="#hero" data-translate-key="home">Ballina</a></li>
+                        <li class="page-scroll"><a href="#about"data-translate-key="rreth">Rreth Meje</a></li>
+                        <li class="page-scroll"><a href="#service"data-translate-key="sherbimi">Sherbimi</a></li>
+                        <li class="page-scroll"><a href="programues.html"data-translate-key="web">Web-Developer</a></li>
+                        <li class="page-scroll"><a href="Video-editor.html"data-translate-key="vi">Video Kreator</a></li>
+                        <li class="page-scroll"><a href="#contact"data-translate-key="kontakti">Kontakti</a></li>
+                        <li>
+                            <div class="language-selector">
+                                <img src="https://th.bing.com/th?id=OSK.HEROo1Hy4-nUoE3huqwGw_SjCFSLjqRVU_x_mgmpLklPuMU&w=296&h=176&c=1&rs=2&o=6&dpr=1.5&pid=SANGAM" alt="Shqip" title="Shqip" onclick="setLanguage('shqip')">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="English" title="English" onclick="setLanguage('anglisht')">
+                        
+                            </div>
+                        </li>
                     </ul>
-                    
                 </div>
                 
 
             </div>
-        </nav>
-    </header> 
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
 
-    <div id="hero" class="hero" >
-    
-        
-    </div>
+    <div id="hero" class="hero">
+        <div class="container">
+            
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h1>Jeton Elezi</h1>
+                    <div class="container1">
+                        <h1 id="text"><span id="profession">Fotografer</span></h1>
+                    </div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="Profili.png" alt="alex-vidal">
+                </div>
+                
+
+            </div>
+        </div>
+    </div><!-- /.hero -->
 
     <main id="main" class="site-main">
 
-     
+        <section id="about" class="site-section section-about text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2 data-translate-key="rreth">Rreth meje</h2>
+                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                        <p data-translate-key="txt1">Pershendetje! Un jam Jetoni, i apasionuar pas kodimit dhe video-editimit. Me një pasion të thellë për teknologjinë dhe kreativitetin që më ka çuar 
+                            të merrem me zhvillimin e web-faqeve dhe krijimin e videove që transmetojnë mesazhe të fuqishme dhe emocionuese.</p>
+                            <button id="btnReadMore" data-translate-key="read">Lexo më shumë</button>
+                            <div id="extraText" style="display: none;">
+                                <p data-translate-key="txt2"> Përveç punës sime si zhvillues, 
+                                    shijoj gjithashtu disa aktivitete aventurash si skijimi, biliardo dhe motociklizem, që më ndihmojnë të qëndroj i freskët dhe të ruaj kreativitetin. 
+                                    Besoj se këto hobi ndikojnë në 
+                                    mënyrën si e shoh punën time dhe si i qasem projekteve të ndryshme, duke i dhënë një këndvështrim unik në çdo aspekt të punës time.
+                                    Nëse doni të dini më shumë rreth pasionit tim dhe projekteve që kam realizuar, mos hezitoni të më kontaktoni!</p>
+                            </div>
+                            <button id="btnHide" style="display: none;" data-translate-key="remove">Largo tekstin</button>
+                            <br>
+                        <button id="showImageBtn" id="showImageBtn" class="btn btn-fill" target="_blank" data-translate-key="cv">Shkarko CV</button>
+                        <div id="imageContainer" class="hidden">
+                            <div id="zoomContainer">
+                                <!-- Butoni për shkarkimin e fotografisë -->
+                                <a id="downloadLink" href="CV.png" download>
+                                    <button style="margin-top: -51px; font-size: 12px;" data-translate-key="cv">Shkarko CV</button>
+                                </a>
+                                <!-- Fotografia -->
+                                <img id="image" src="CV.png" alt="Fotografia" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section><!-- /.secton-about -->
 
-    <!--                   VIDEOOO KREATIVEEE-->
-        <section id="krev" class="site-section section-portfolio">
+        <section class="site-section section-skills">
             <div class="container">
                 <div class="text-center">
-                    <h3 data-translate-key="punet" data-translate-key="portfolio">Portofoli im</h3>
-                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                    <br><br><br>
-                    <h2>Projektet e kryera</h2>
-                    
+                    <h3 data-translate-key="skills">Aftësitë e mija</h3>
                     <img src="assets/img/lines.svg" class="img-lines" alt="lines">
                 </div>
                 <div class="row">
-                   
-                    <h1 style="text-align:  center; font-size: 60px; text-shadow: 3px 5px 12px;">SE SHPEJTI...</h1>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Html/css</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="100"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Python</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="25"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Javascript</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="50"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Php</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="20"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>WordPress</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Photoshop</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="75"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                      
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Premiere Pro</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="95"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Microsoft Office</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="100"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section><!-- /.secton-skills -->
+
+        <section id="service" class="site-section section-services overlay text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 data-translate-key="bej">Cfare bej un ?</h3>
+                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/back-end.svg" alt="Front End Developer">
+                            <a href="programues.html"> <h4 data-translate-key="we">Web Developer</h4></a>
+                            <p data-translate-key="krijim">Ofrojmë faqe interneti të shpejta, funksionale dhe të dizajnuara për të përmbushur nevojat e biznesit tuaj. Çdo projekt është i personalizuar dhe i optimizuar për përdoruesit.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/front-end.svg" alt="Back End Developer">
+                            <a href="Video-editor.html"><h4 data-translate-key="vi">Video Kreator</h4></a>
+                            <p data-translate-key="vid1">Ofroj video kreative dhe tërheqëse për të ju ndihmuar te dalloheni ne treg. Videot e krijuara janë të përshtatura për çdo platformë dhe krijojnë një lidhje të fortë me audiencën.</p>
+                        </div><!-- /.service -->
+                    </div>
                 </div>
                 </div>
-        </section>
+            </div>
+        </section><!-- /.secton-services -->
 
 
 
+        <section style="margin-top: 30px;" class="site-section section-counters text-center">
+            <div class="container">
+                <div class="row">
+                 
+                    <div class="col-sm-4 col-xs-12">
+                        <p class="counter start" data-to="8" data-speed="2000">0</p>       
+                        <h4 data-translate-key="s3">Projekte te kryera</h4>      
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
+                        <h4 data-translate-key="s1">Sekonda ne kete web faqe!<br>Cfarë po prisni ?</h4>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-counters -->
 
-
-
-        <section id="contact" class="site-section section-form text-center">
+        <section  id="contact" class="site-section section-form text-center">
             <div class="container">
 
                 <h3>Contact</h3>
@@ -663,8 +791,14 @@ margin-top: 200px;
                     </div>
                 </div>
             </div><!-- end container -->
-        </div>
-    </main>
+        </div><!-- end copyrights -->
+    </main><!-- /#main -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
@@ -720,25 +854,97 @@ const translations = {
 
 
 
-        "krev":{
-                    "shqip" : "Video Kreative",
-                    "anglisht" : "Creativity Video",
-                },
-                "magic":{
-                    "shqip" : "Video Magjike",
-                    "anglisht" : "Magic Trick Video",
-                },
-
-                "portofol":{
-                    "shqip" : "Portofoli",
-                    "anglisht" : "Wallet",
-                },
-
-                "ballina":{
+        "home":{
                     "shqip" : "Ballina",
                     "anglisht" : "Home",
                 },
-           
+
+        "rreth":{
+                    "shqip" : "Rreth meje",
+                    "anglisht" : "About me",
+                },
+        "sherbimi":{
+                    "shqip" : "Sherbimi",
+                    "anglisht" : "Services",
+                },
+        "Portofoli":{
+                    "shqip" : "Portofoli",
+                    "anglisht" : "Wallets",
+                },        
+        "kontakti":{
+                    "shqip" : "Kontakti",
+                    "anglisht" : "Contact",
+                },    
+
+                "txt1":{
+                    "shqip" : "Pershendetje! Un jam Jetoni, i apasionuar pas kodimit dhe video-editimit. Me një pasion të thellë për teknologjinë dhe kreativitetin që më ka çuar të merrem me zhvillimin e web-faqeve dhe krijimin e videove që transmetojnë mesazhe të fuqishme dhe emocionuese.",
+                    "anglisht" : "Hello! I'm Jeton, passionate about coding and video editing. With a deep passion for technology and creativity that has led me to develop websites and create videos that convey powerful and emotional messages.                    ",
+                },    
+                "txt2":{
+                    "shqip" : "Përveç punës sime si zhvillues, shijoj gjithashtu disa aktivitete aventurash si skijimi, biliardo dhe motociklizem, që më ndihmojnë të qëndroj i freskët dhe të ruaj kreativitetin. Besoj se këto hobi ndikojnë në mënyrën si e shoh punën time dhe si i qasem projekteve të ndryshme, duke i dhënë një këndvështrim unik në çdo aspekt të punës time. Nëse doni të dini më shumë rreth pasionit tim dhe projekteve që kam realizuar, mos hezitoni të më kontaktoni!",
+                    "anglisht" : "In addition to my work as a developer, I also enjoy some adventure activities like skiing, billiards, and motorcycling, which help me stay fresh and creative. I believe that these hobbies influence the way I see my work and how I approach different projects, giving me a unique perspective on every aspect of my work. If you want to know more about my passion and the projects I have completed, don't hesitate to contact me!",
+                },    
+
+"read":{
+                    "shqip" : "Lexo më shumë",
+                    "anglisht" : "Read more",
+                },  
+                "remove":{
+                    "shqip" : "Largo tekstin",
+                    "anglisht" : "remove the text",
+                },  
+                "cv":{
+                    "shqip" : "Shkarko CV",
+                    "anglisht" : "Download CV",
+                },  
+
+
+                "skills":{
+                    "shqip" : "Aftësitë e mija",
+                    "anglisht" : "My skills",
+                },  
+
+
+                "bej":{
+                    "shqip" : "Cfar bej un ?",
+                    "anglisht" : "What do i do ?",
+                },  
+
+                "krijim":{
+                    "shqip" : "Ofrojmë faqe interneti të shpejta, funksionale dhe të dizajnuara për të përmbushur nevojat e biznesit tuaj. Çdo projekt është i personalizuar dhe i optimizuar për përdoruesit. ",
+                    "anglisht" : "We offer fast, functional websites designed to meet your business needs. Each project is personalized and optimized for users",
+                },  
+                
+                "vid1":{
+                    "shqip" : "Ofroj video kreative dhe tërheqëse për të ju ndihmuar te dalloheni ne treg. Videot e krijuara janë të përshtatura për çdo platformë dhe krijojnë një lidhje të fortë me audiencën.",
+                    "anglisht" : "I offer creative and engaging videos to help you stand out in the market. The videos created are tailored for any platform and create a strong connection with the audience",
+                },
+                "punet":{
+                    "shqip" : "Punet qe i kam kryer",
+                    "anglisht" : "The jobs I have done",
+                },
+
+                "we":{
+                    "shqip" : "Krijues Web-Faqe",
+                    "anglisht" : "Web Developer",
+                },
+
+
+                "vi":{
+                    "shqip" : "Video Kreator",
+                    "anglisht" : "Video Creator",
+                },
+
+                "s1":{
+                    "shqip" : "Sekonda ne kete web faqe! Cfarë po prisni ?",
+                    "anglisht" : "Seconds on this site! What are you waiting for ?",
+                },
+        
+
+                "s3":{
+                    "shqip" : "Projekte te kryera",
+                    "anglisht" : "Projects Delivered",
+                },
 
 
                 
